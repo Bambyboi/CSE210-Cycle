@@ -41,8 +41,7 @@ The project files are organized as follows:
   +-- game              (It holds files that is need to make the game run perfectly)
     +-- casting
       +-- __pycache__   (cache)
-      +-- actor.py      (A visible, moving object that takes part in the game. Actor's will maintain track of its identity, location,
-                         and speed in two-dimensional space.)
+      +-- actor.py      ()
       +-- cast.py       (A gathering of actors, the duty of a cast is to keep on eye of a collection of actors. It does adding, 
                          removing and getting them by a group name.)
       +-- food.py       ()
@@ -54,7 +53,7 @@ The project files are organized as follows:
       +-- director.py   (It receives directional input from the keyboard and implement it to the robot.)
     +-- scripting
       +-- __pycache__   (cache)
-      +-- action.py
+      +-- action.py     ()
       +-- control_actors_action.py   ()
       +-- draw_actors_action.py      ()
       +-- handle_collision action.py ()
