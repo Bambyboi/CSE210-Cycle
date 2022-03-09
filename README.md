@@ -21,7 +21,7 @@
 # Cycle
 Cycle is a game where the players try to cut each other off using cycles that leave a trail behind them.
 
-![image](https://www.google.com/search?q=gems+and+rocks&rlz=1C1ASUM_enWS923WS923&sxsrf=APq-WBuIDApYFDTw1fW6CikIqDGf8QWPiQ:1645847334532&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjJruqNu5z2AhUOUGwGHeO5DusQ_AUoAXoECAEQAw&biw=1366&bih=568&dpr=1#imgrc=nylOM1XzPXS4nM)
+![](https://github.com/Bambyboi/CSE210-Cycle/blob/main/Screen%20Shot%202022-03-03%20at%209.52.44%20AM.png)
 
 ## Getting Started
 
