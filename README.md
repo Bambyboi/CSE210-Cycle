@@ -44,10 +44,11 @@ The project files are organized as follows:
       +-- actor.py      ()
       +-- cast.py       (A gathering of actors, the duty of a cast is to keep on eye of a collection of actors. It does adding, 
                          removing and getting them by a group name.)
-      +-- food.py       ()
-      +-- score.py      ()
-      +-- snake         ()
-      +-- snake2        ()
+      +-- food.py       (This contains the snakes food)
+      +-- score.py      (snake one points)
+      +-- score2.py     (snake two points)
+      +-- snake         (player one)
+      +-- snake2        (player two)
     +-- directing
       +-- __pycache__   (cache)
       +-- director.py   (It receives directional input from the keyboard and implement it to the robot.)
@@ -56,7 +57,7 @@ The project files are organized as follows:
       +-- action.py     ()
       +-- control_actors_action.py   ()
       +-- draw_actors_action.py      ()
-      +-- handle_collision action.py ()
+      +-- handle_collision action.py (This file will managed the collisions of two snakes)
       +-- move_actors_action.py      ()
       +-- script  ()
     +-- services
