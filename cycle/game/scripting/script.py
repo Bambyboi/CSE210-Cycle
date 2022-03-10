@@ -48,3 +48,4 @@ class Script:
         """
         if group in self._actions:
             self._actions[group].remove(action)
+            
