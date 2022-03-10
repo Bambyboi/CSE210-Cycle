@@ -72,5 +72,5 @@ class ControlActorsAction2(ControlActorsAction):
         if self._keyboard_service.is_key_down('k'):
             self._direction = Point(0, constants.CELL_SIZE)
         
-        snake = cast.get_first_actor("snakes")
+        snake = cast.get_second_actor("snakes")
         snake.turn_head(self._direction)
