@@ -16,7 +16,7 @@
 - Samuel
 - Alvaro
 - Martin
-- Gunnar
+- Gunnar, rgschmidt14@byui.edu
 
 # Cycle
 Cycle is a game where the players try to cut each other off using cycles that leave a trail behind them.
