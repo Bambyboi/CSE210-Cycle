@@ -27,7 +27,7 @@ def main():
     cast.add_actor("snakes", Snake())
     cast.add_actor("snakes", Snake2())
     cast.add_actor("scores", Score())
-    cast.add_actor("scores2", Score2())
+    cast.add_actor("scores", Score2())
 
     # start the game
     keyboard_service = KeyboardService()
@@ -35,9 +35,9 @@ def main():
 
     script = Script()
     script.add_action("input", ControlActorsAction(keyboard_service))
-    script.add_action("input2", ControlActorsAction2(keyboard_service))
+    script.add_action("input", ControlActorsAction2(keyboard_service))
     script.add_action("update", MoveActorsAction())
-    script.add_action("update2", HandleCollisionsAction())
+    script.add_action("update", HandleCollisionsAction())
     script.add_action("output", DrawActorsAction(video_service))
 
     director = Director(video_service)
@@ -46,4 +46,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
