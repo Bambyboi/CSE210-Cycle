@@ -15,10 +15,9 @@ class Snake2(Snake):
     """
 
     def __init__(self):
-        pass
-    #     super().__init__()
-    #     self._segments = []
-    #     self._prepare_body()
+        super().__init__()
+        self._segments = []
+        self._prepare_body()
 
     # def get_segments(self):
     #     return self._segments
