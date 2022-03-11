@@ -18,6 +18,8 @@ class HandleCollisionsAction(Action):
     def __init__(self):
         """Constructs a new HandleCollisionsAction."""
         self._is_game_over = False
+        self.length_of_tail = constants.TAIL_LENGTH
+        self.cycle_length = 0
 
     def execute(self, cast, script):
         """Executes the handle collisions action.
@@ -26,24 +28,29 @@ class HandleCollisionsAction(Action):
             cast (Cast): The cast of Actors in the game.
             script (Script): The script of Actions in the game.
         """
+
         if not self._is_game_over:
-            self._handle_food_collision(cast)
+            self._handle_food_collision(cast, self.length_of_tail)
             self._handle_segment_collision(cast)
             self._handle_game_over(cast)
 
-    def _handle_food_collision(self, cast):
-        """Updates the score nd moves the food if the snake collides with the food.
+    def _handle_food_collision(self, cast, length_of_tail):
+        """Changed from original snake game. Now this simply extends tail to a certain length, then stops, allowing\
+            cycles to have lines that are decently long, but not too long.
 
         Args:
             cast (Cast): The cast of Actors in the game.
         """
-        snake = cast.get_first_actor("snakes")
-        snake2 = cast.get_second_actor("snakes")
+        
+        if self.cycle_length < length_of_tail:
+            self.cycle_length += 1
+            snake = cast.get_first_actor("snakes")
+            snake2 = cast.get_second_actor("snakes")
 
 
-        snake.grow_tail(1)
+            snake.grow_tail(1)
 
-        snake2.grow_tail(1)
+            snake2.grow_tail(1)
 
     def _handle_segment_collision(self, cast):
         """Sets the game over flag if the snake collides with one of its segments.
