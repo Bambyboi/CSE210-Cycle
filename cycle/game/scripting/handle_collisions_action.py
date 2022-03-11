@@ -66,11 +66,12 @@ class HandleCollisionsAction(Action):
         head2 = snake2.get_segments()[0]
         segments2 = snake2.get_segments()[1:]
 
+        #if you run into the other persons line you die, but if you run into your own line you are okay
         for segment in segments:
             for segment2 in segments2:
-                if head2.get_position().equals(segment2.get_position()):
+                if head2.get_position().equals(head.get_position()):
                     self._is_game_over = True
-                elif head.get_position().equals(segment.get_position()):
+                elif head.get_position().equals(head2.get_position()):
                     self._is_game_over = True
                 elif head2.get_position().equals(segment.get_position()):
                     self._is_game_over = True
