@@ -44,7 +44,6 @@ The project files are organized as follows:
       +-- actor.py      ()
       +-- cast.py       (A gathering of actors, the duty of a cast is to keep on eye of a collection of actors. It does adding, 
                          removing and getting them by a group name.)
-      +-- food.py       (This contains the snakes food)
       +-- score.py      (snake one points)
       +-- score2.py     (snake two points)
       +-- snake         (player one)
@@ -56,6 +55,7 @@ The project files are organized as follows:
       +-- __pycache__   (cache)
       +-- action.py     ()
       +-- control_actors_action.py   ()
+      +-- control_actors_action2.py   ()
       +-- draw_actors_action.py      ()
       +-- handle_collision action.py (This file will managed the collisions of two snakes)
       +-- move_actors_action.py      ()
