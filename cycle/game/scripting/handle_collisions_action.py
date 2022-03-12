@@ -30,11 +30,11 @@ class HandleCollisionsAction(Action):
         """
 
         if not self._is_game_over:
-            self._handle_food_collision(cast, self.length_of_tail)
+            self._handle_trail_growth(cast, self.length_of_tail)
             self._handle_segment_collision(cast)
             self._handle_game_over(cast)
 
-    def _handle_food_collision(self, cast, length_of_tail):
+    def _handle_trail_growth(self, cast, length_of_tail):
         """Changed from original snake game. Now this simply extends tail to a certain length, then stops, allowing\
             cycles to have lines that are decently long, but not too long.
 
@@ -70,8 +70,6 @@ class HandleCollisionsAction(Action):
         for segment in segments:
             for segment2 in segments2:
                 if head2.get_position().equals(head.get_position()):
-                    self._is_game_over = True
-                elif head.get_position().equals(head2.get_position()):
                     self._is_game_over = True
                 elif head2.get_position().equals(segment.get_position()):
                     self._is_game_over = True

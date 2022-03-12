@@ -8,7 +8,7 @@ SCREEN_SIZE_MODIFIER = 2
 COLUMNS = MAX_X / 22.5
 ROWS = MAX_Y / 30
 CELL_SIZE = 15
-FRAME_RATE = 24
+FRAME_RATE = 10
 FONT_SIZE = 15
 CAPTION = "Cycle Game"
 # the head is one long
