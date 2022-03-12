@@ -71,8 +71,6 @@ class HandleCollisionsAction(Action):
             for segment2 in segments2:
                 if head2.get_position().equals(head.get_position()):
                     self._is_game_over = True
-                elif head.get_position().equals(head2.get_position()):
-                    self._is_game_over = True
                 elif head2.get_position().equals(segment.get_position()):
                     self._is_game_over = True
                 elif head.get_position().equals(segment2.get_position()):
